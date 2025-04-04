@@ -29,9 +29,20 @@ Open the `Batch_Registration.ijm` script in FIJI and run it. Again, you will be 
 The outputs are as follows:
 * The `_params.txt` file contains the parameters that were passed to BUnwarpJ.
 * The `Images_Output` directory contains the registered images.
-* The `Tranformations_Output` contains the tranformations that were applied to each image.
+* The `Tranformations_Output` contains the transformations that were applied to each image.
 
 The next two steps below apply the same transformations to the spatial coordinates.
 
 ## Step 3: Convert Transforms
+
+Before we can apply the transforms to the spatial coordinates, they need to be converted into a different format. By default, the transforms output by BUnwarpJ are a series of coefficients, describing splines, which are a little tricky to work with. To simplify Step 4 below, it's easier to derive an image from those transforms, giving us the extent of displacement in x and y for each location in the input images, so we can easily map the associated spatial coordinates to their new locations.
+
+Open the `Batch_Transform_Conversion.ijm` script in FIJI and run it. You will be asked to specify three different directories:
+
+![image](https://github.com/user-attachments/assets/1085acf9-7304-4ad7-8cc7-8e95df58da66)
+
+* The transformations directory corresponds to the `Transformations_Output` from Step 2 above.
+* The warped images directory corresponds to the `Images_Output` from Step 2 above.
+* You can specify the output as whatever you like - this is where the converted transforms will be saved.
+
 ## Step 4: Apply Transforms to Spatial Coordinates
