@@ -22,7 +22,16 @@ The input directory should be the location of the images to be cropped. In the c
 
 ## Step 2: Register Images
 
-Open the `Batch_Registration.ijm` script in FIJI and run it. Again, you will be asked to specify an input and an output directory. The input directory should be the output from Step 1 above. You can specify the output as whatever you like - this is where the registered images will be saved. The registration is achieved using the FIJI plugin [BUnwarpJ](https://imagej.net/plugins/bunwarpj/).
+Open the `Batch_Registration.ijm` script in FIJI and run it. Again, you will be asked to specify an input and an output directory. The input directory should be the output from Step 1 above. You can specify the output as whatever you like - this is where the registered images will be saved. The registration is achieved using the FIJI plugin [BUnwarpJ](https://imagej.net/plugins/bunwarpj/). If everything has run correctly, you should see the following in your output directory:
+
+![image](https://github.com/user-attachments/assets/f020e275-a20c-44d5-9e85-af0562713a57)
+
+The outputs are as follows:
+* The `_params.txt` file contains the parameters that were passed to BUnwarpJ.
+* The `Images_Output` directory contains the registered images.
+* The `Tranformations_Output` contains the tranformations that were applied to each image.
+
+The next two steps below apply the same transformations to the spatial coordinates.
 
 ## Step 3: Convert Transforms
 ## Step 4: Apply Transforms to Spatial Coordinates
