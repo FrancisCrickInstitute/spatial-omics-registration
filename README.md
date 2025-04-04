@@ -14,7 +14,11 @@ If you don't already have FIJI installed, you can download it [here](https://fij
 
 ## Step 1: Crop Images
 
-Open the `Batch_Crop.ijm` script in FIJI. 
+Open the `Batch_Crop.ijm` script in FIJI and run it. You will be asked to specify an input and output directory:
+
+![image](https://github.com/user-attachments/assets/ea0ea0bf-1961-4300-9344-baebfac606a5)
+
+The input directory should be the location of the images to be cropped. In the case of the Visum platform, this will be the `Tiffs` directory. You can specify the output as whatever you like - this is where the cropped images will be saved.
 
 ## Step 2: Register Images
 ## Step 3: Convert Transforms
