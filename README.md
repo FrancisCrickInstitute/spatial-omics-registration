@@ -20,6 +20,8 @@ Open the `Batch_Crop.ijm` script in FIJI and run it. You will be asked to specif
 
 The input directory should be the location of the images to be cropped. In the case of the Visum platform, this will be the `Tiffs` directory. You can specify the output as whatever you like - this is where the cropped images will be saved.
 
+If everything runs correctly, you should see a series of cropped images in your specified output directory. You should also see a directory called `rois` in your output directory - you'll need this for Step 4.
+
 ## Step 2: Register Images
 
 Open the `Batch_Registration.ijm` script in FIJI and run it. Again, you will be asked to specify an input and an output directory. The input directory should be the output from Step 1 above. You can specify the output as whatever you like - this is where the registered images will be saved. The registration is achieved using the FIJI plugin [BUnwarpJ](https://imagej.net/plugins/bunwarpj/). If everything has run correctly, you should see the following in your output directory:
