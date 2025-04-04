@@ -48,3 +48,12 @@ Open the `Batch_Transform_Conversion.ijm` script in FIJI and run it. You will be
 * You can specify the output as whatever you like - this is where the converted transforms will be saved.
 
 ## Step 4: Apply Transforms to Spatial Coordinates
+
+Open the `Batch_Coordinates_Transform.ijm` script in FIJI and run it. You will be asked to specify several directories:
+
+![image](https://github.com/user-attachments/assets/5f66eed8-6d5e-440c-8f27-aafdbf29d818)
+
+* The raw transforms directory is the output from Step 3 above.
+* The original omics output directory is the parent directory containing the original spatial coordinate data. In the case of the Visium platform, this will be called `Output_Files` and it should contain a series of sub-directories, one for each of the input files in the `Tiffs` directory that provided the inputs for Step 1.
+* The roi directory corresponds to the `rois` directory created in Step 1 above
+* You can specify the output as whatever you like - this is where the transformed spatial coordinates will be saved.
